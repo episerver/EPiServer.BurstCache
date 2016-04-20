@@ -20,4 +20,4 @@ protected override void SetCachePolicy()
         new TimeSpan(0, 0, 60)); // This is the refresh interval; when this time has elapsed, one thread is chosen to refresh the page.
 }
 ```
-
+...to your ```SiteTemplatePage<T>```-class (if you're building an Alloy-based page.)
