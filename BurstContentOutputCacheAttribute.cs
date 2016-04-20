@@ -53,7 +53,7 @@ namespace EPiServer.BurstCache
         /// </summary>
         public BurstContentOutputCacheAttribute()
         {
-            UseOutputCacheValidator = (principal, httpContext, duration) => OutputCacheHandler.UseOutputCache(principal, httpContext, duration);
+            UseOutputCacheValidator = (principal, httpContext, duration) => BurstOutputCacheHandler.UseOutputCache(principal, httpContext, duration);
         }
 
         //Note: For attributes we should not take dependency through constructor since they are instantiated during assembly scanning
